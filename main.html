@@ -8,6 +8,13 @@
   </head>
 
   <body>
+    <!-- Navigation Section -->
+    <nav>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; Menu</span
+      >
+    </nav>
+
     <!-- Header Section -->
     <header>
       <div class="container">
@@ -16,16 +23,18 @@
       </div>
     </header>
 
-    <!-- Navigation Section -->
-    <nav>
-      <div class="container">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Overlay Section -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </nav>
+    </div>
 
     <!-- Footer Section -->
     <footer>
@@ -33,5 +42,7 @@
         <p>&copy; 2023 Ryan Clarke. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
