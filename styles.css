@@ -23,71 +23,25 @@ body {
   color: #eee9da;
 }
 
-img {
-  border-radius: 50%;
+.row {
   display: flex;
+  align-items: center;
+}
+
+.column {
+  flex: 50%;
+  text-align: center;
 }
 
 #headshot {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+  display: inline-flex;
 }
 
 #headshot:hover {
   opacity: 0.7;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-  background-color: transparent;
-}
-
-/* Add Animation */
-.modal-content,
-#caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0.1);
-  }
-  to {
-    transform: scale(1);
-  }
 }
 
 /* The Close Button */
@@ -114,6 +68,75 @@ img {
   .modal-content {
     width: 100%;
   }
+}
+
+/* Header styling */
+header {
+  /* background-color: #3498db; */
+  color: #eee9da;
+  padding: 20px 0;
+}
+
+header .container {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Footer styling */
+footer {
+  background-color: #6096b4;
+  color: #93bfcf;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation styling */
+nav {
+  /* background-color: #333; */
+  background-color: rgb(189, 205, 214); /* Black fallback color */
+  background-color: rgba(189, 205, 214, 0.9); /* Black w/opacity */
+  color: #eee9da;
+}
+
+nav span {
+  display: flex;
+  justify-content: right;
+  padding-right: 1%;
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eee9da;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 /* Overlay styling */
@@ -180,71 +203,54 @@ img {
   }
 }
 
-/* Header styling */
-header {
-  /* background-color: #3498db; */
-  color: #eee9da;
-  padding: 20px 0;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
-header .container {
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
   text-align: center;
-}
-
-header h1 {
-  font-size: 2em;
-}
-
-header p {
-  font-size: 1.2em;
-}
-
-/* Navigation styling */
-nav {
-  /* background-color: #333; */
-  background-color: rgb(189, 205, 214); /* Black fallback color */
-  background-color: rgba(189, 205, 214, 0.9); /* Black w/opacity */
-  color: #eee9da;
-}
-
-nav span {
-  display: flex;
-  justify-content: right;
-  padding-right: 1%;
-}
-
-nav .container {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #eee9da;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-/* Footer styling */
-footer {
-  background-color: #6096b4;
-  color: #93bfcf;
+  color: #ccc;
   padding: 10px 0;
-  text-align: center;
+  height: 150px;
+  background-color: transparent;
 }
 
-/* Container styling */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* Add Animation */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
