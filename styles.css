@@ -14,11 +14,12 @@ li {
 * {
   box-sizing: border-box;
   background-color: #6096b4;
+  font-family: "Roboto";
 }
 
 /* Basic styling for the body */
 body {
-  font-family: "Arial", sans-serif;
+  /* font-family: "Roboto"; */
   line-height: 1.6;
   color: #eee9da;
 }
@@ -31,6 +32,16 @@ body {
 .column {
   flex: 50%;
   text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    display: block;
+  }
+  .column {
+    width: 100%;
+  }
 }
 
 #headshot {
@@ -115,7 +126,8 @@ nav {
 nav span {
   display: flex;
   justify-content: right;
-  padding-right: 1%;
+  padding-right: 2%;
+  /* background-color: rgba(96, 150, 180, 0.4); */
 }
 
 nav .container {
@@ -156,8 +168,7 @@ nav a {
 
 /* Position the content inside the overlay */
 .overlay-content {
-  background-color: rgb(189, 205, 214); /* Black fallback color */
-  background-color: rgba(189, 205, 214, 0.9); /* Black w/opacity */
+  background-color: transparent;
   position: relative;
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
@@ -167,8 +178,7 @@ nav a {
 
 /* The navigation links inside the overlay */
 .overlay a {
-  background-color: rgb(189, 205, 214); /* Black fallback color */
-  background-color: rgba(189, 205, 214, 0.9); /* Black w/opacity */
+  background-color: transparent;
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
