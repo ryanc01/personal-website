@@ -43,6 +43,13 @@ body {
   }
 }
 
+#about-me {
+  background-color: #6096b4;
+  color: #eee9da;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
 #headshot {
   border-radius: 50%;
   cursor: pointer;
