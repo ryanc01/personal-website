@@ -13,15 +13,14 @@ li {
 /* Apply a box-sizing border-box model to all elements */
 * {
   box-sizing: border-box;
-  background-color: #6096b4;
+  background-color: #eee9da;
   font-family: "Roboto";
 }
 
 /* Basic styling for the body */
 body {
-  /* font-family: "Roboto"; */
   line-height: 1.6;
-  color: #eee9da;
+  color: #6096b4;
 }
 
 .row {
@@ -83,8 +82,7 @@ body {
 
 /* Header styling */
 header {
-  /* background-color: #3498db; */
-  color: #eee9da;
+  color: #6096b4;
   padding: 20px 0;
 }
 
@@ -102,7 +100,6 @@ header p {
 
 /* Footer styling */
 footer {
-  background-color: #6096b4;
   color: #93bfcf;
   padding: 10px 0;
   text-align: center;
@@ -117,10 +114,9 @@ footer {
 
 /* Navigation styling */
 nav {
-  /* background-color: #333; */
   background-color: rgb(189, 205, 214); /* Black fallback color */
   background-color: rgba(189, 205, 214, 0.9); /* Black w/opacity */
-  color: #eee9da;
+  color: #6096b4;
 }
 
 nav span {
