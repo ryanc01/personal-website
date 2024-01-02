@@ -82,6 +82,10 @@ body {
   text-decoration: none;
 }
 
+#portfolio-left p a:hover {
+  text-decoration: underline;
+}
+
 #portfolio-right {
   padding-top: 10%;
   padding-bottom: 10%;
