@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -24,6 +31,13 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
   <body>
+    <!-- Navigation Section -->
+    <nav>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
+    </nav>
+
     <!-- Header Section -->
     <header>
       <div class="container">
@@ -31,21 +45,10 @@
       </div>
     </header>
 
-    <!-- Navigation Section -->
-    <nav>
-      <div class="container">
-        <ul>
-          <li><a href="main.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
     <!-- Portfolio Section -->
     <section id="portfolio">
       <div class="container">
-        <h2>Portfolio</h2>
+        <h2>Projects</h2>
         <!-- Showcase your projects with images and descriptions -->
         <div class="project">
           <img src="project1.jpg" alt="Project 1" />
@@ -60,5 +63,27 @@
         <!-- Add more projects as needed -->
       </div>
     </section>
+
+    <!-- Overlay Section -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Ryan Clarke. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
