@@ -117,6 +117,10 @@ body {
   }
 }
 
+li {
+  margin-left: 20px;
+}
+
 .button {
   display: inline-block;
   border-radius: 4px;
