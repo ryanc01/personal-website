@@ -143,6 +143,11 @@ a:visited {
   color: #93bfcf;
 }
 
+#see-more {
+  text-align: center;
+  margin: auto;
+}
+
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -193,6 +198,24 @@ a:visited {
 
 #headshot:hover {
   opacity: 0.7;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 50%;
 }
 
 /* The Close Button */
