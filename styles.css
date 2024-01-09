@@ -148,6 +148,15 @@ a:visited {
   margin: auto;
 }
 
+#email-link a:link,
+a:visited {
+  color: #6096b4;
+}
+
+#email-link a:hover {
+  color: #93bfcf;
+}
+
 .button {
   display: inline-block;
   border-radius: 4px;
