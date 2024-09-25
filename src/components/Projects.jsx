@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import scadaImg from "../assets/scada.png";
 import mipsImg from "../assets/mips.jpg";
 import flexflowImg from "../assets/flexflow.png";
+import eceImg from "../assets/ece.png";
 
 const Projects = () => {
   return (
@@ -10,17 +11,29 @@ const Projects = () => {
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">
         Projects
       </h1>
-      <p className="text-center py-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eveniet
-        aliquid consectetur quas blanditiis sapiente praesentium quis eius,
-        perferendis sint deleniti ab dignissimos quam earum itaque voluptate
-        porro, veniam mollitia.
+      <p className="text-center py-8 text-stone-500">
+        These are some of the projects that I worked on recently in my
+        undergraduate program at Virginia Tech, along with the programming
+        languages and technologies used to develop them. Click on each one to
+        learn more!
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
-        <ProjectItem img={scadaImg} title="SCADA System Development" />
-        <ProjectItem img={mipsImg} title="MIPS Simulator" />
-        <ProjectItem img={flexflowImg} title="FlexFlow iOS Fitness App" />
-        <ProjectItem img={scadaImg} title="TBD" />
+        <ProjectItem
+          img={scadaImg}
+          title="SCADA System Development"
+          stack="C++, Python, PostgreSQL, Linux"
+        />
+        <ProjectItem img={mipsImg} title="MIPS Simulator" stack="C++, Qt" />
+        <ProjectItem
+          img={flexflowImg}
+          title="FlexFlow iOS Fitness App"
+          stack="Swift"
+        />
+        <ProjectItem
+          img={eceImg}
+          title="ECE Surfers Minigame"
+          stack="Embedded C"
+        />
       </div>
     </div>
   );
