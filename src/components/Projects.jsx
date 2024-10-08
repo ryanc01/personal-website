@@ -22,17 +22,25 @@ const Projects = () => {
           img={scadaImg}
           title="SCADA System Development"
           stack="C++, Python, PostgreSQL, Linux"
+          id="scada-system"
         />
-        <ProjectItem img={mipsImg} title="MIPS Simulator" stack="C++, Qt" />
+        <ProjectItem
+          img={mipsImg}
+          title="MIPS Simulator"
+          stack="C++, Qt"
+          id="mips-simulator"
+        />
         <ProjectItem
           img={flexflowImg}
           title="FlexFlow iOS Fitness App"
           stack="Swift"
+          id="flexflow-ios"
         />
         <ProjectItem
           img={eceImg}
           title="ECE Surfers Minigame"
           stack="Embedded C"
+          id="ece-surfers"
         />
       </div>
     </div>

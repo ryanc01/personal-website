@@ -35,7 +35,14 @@ const Main = () => {
             />
           </h2>
           <div className="flex justify-center pt-6 max-w-[200px] w-full">
-            <FaLinkedinIn className="cursor-pointer" size={20} />
+            <a
+              href="https://www.linkedin.com/in/ryan-clarke-0/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
           </div>
         </div>
       </div>
