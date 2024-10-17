@@ -9,7 +9,7 @@ const Resume = () => {
       {/* Embed PDF */}
       <div className="flex justify-center">
         <embed
-          src="Resume.pdf"
+          src="/Resume.pdf"
           type="application/pdf"
           width="100%"
           height="800px"
